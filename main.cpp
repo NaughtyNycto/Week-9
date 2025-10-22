@@ -128,3 +128,55 @@ using namespace std;
 // }
 
 
+// Problem 9
+// int countZero(int n) {
+//     if (n == 0) {
+//         return 1;
+//     }
+//
+//     if (n < 10) {
+//         return 0;
+//     }
+//
+//     int lastDigit = n % 10;
+//     int count = 0;
+//
+//     if (lastDigit == 0) {
+//         count = 1;
+//     }
+//
+//     return count + countZero(n / 10);
+// }
+//
+// int main() {
+//     int number;
+//     cout << "Enter a number: ";
+//     cin >> number;
+//
+//     cout << countZero(number) << endl;
+// }
+
+
+// Problem 10
+// int power(int x, int y) {
+//     if (y == 0) {
+//         return 1;
+//     }
+//
+//     if (y % 2 == 0) {
+//         int half = power(x, y / 2);
+//         return half * half;
+//     } else {
+//         return x * power(x, y - 1);
+//     }
+// }
+//
+// int main() {
+//     int base, exponent;
+//     cout << "Enter base: ";
+//     cin >> base;
+//     cout << "Enter exponent: ";
+//     cin >> exponent;
+//
+//     cout << power(base, exponent) << endl;
+// }
